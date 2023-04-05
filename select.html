@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택 요소</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <form>
+        <h1>여름방학 특강 신청</h1>
+            <fieldset>
+                <legend>수강신청인</legend>
+                <p>
+                    <label for="classNum">학번</label>
+                    <input type="text" name="classNum" id="classNum">
+                </p>
+                <p>
+                    <label for="name">성명</label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p>
+                    <label>학과</label>
+                    <select name="class">
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기전자공학과</option>
+                        <option value="computer" selected>컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>학과</label>
+                    <select name="class" size="5" multiple>
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기전자공학과</option>
+                        <option value="computer" selected>컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>학과</label>
+                    <select name="class">
+                        <optgroup label="공과대학">
+                            <option value="archi">건축공학과</option>
+                            <option value="mechanic">기계공학과</option>
+                            <option value="indust">산업공학과</option>
+                            <option value="elec">전기전자공학과</option>
+                            <option value="computer" selected>컴퓨터공학과</option>
+                            <option value="chemical">화학공학과</option>
+                        </optgroup>
+                            <optgroup label="인문대학">
+                            <option value="history">사학과</option>
+                            <option value="lang">어문학부</option>
+                            <option value="philo">철학과</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <input type="text" list="tech" name="class">
+                <datalist id="tech">
+                    <option value="archi" label="건축공학과"></option>
+                    <option value="mechanic" label="기계공학과"></option>
+                    <option value="indust" label="산업공학과"></option>
+                    <option value="elec" label="전기전자공학과"></option>
+                    <option value="computer" label="컴퓨터공학과"></option>
+                    <option value="chemical" label="화학공학과"></option>
+                </datalist>
+            </fieldset>
+    </form>
+    <h2>소개글</h2>
+    <textarea cols="30" rows="10">안녕하세요</textarea>
+    
+</body>
+</html>

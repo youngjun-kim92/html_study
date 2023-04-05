@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI플러그인</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <style>
+      
+    </style>
+    <script>
+        $(function () {
+          $('#box').hover(function () {
+            $(this).addClass('ui-state-hover');
+          }, function () {
+            $(this).removeClass('ui-state-hover');
+          });
+        });
+    </script>
+</head>
+<body>
+    <div id="box" class="ui-widget-content ui-corner-all">
+      <h1 class="ui-widget-header"><span class="ui-icon ui-icon-tag"></span> 정부, 반도체 등 기업 신·증설 지원…용적률 최대 1.4배</h3>
+      <p>정부가 반도체 등 국가첨단산업단지 기업 신·증설 투자를 지원하기 위해 해당 산업단지 용적률을 최대 1.4배 높여주기로 했다.</p>
+    </div>
+</body>
+</html>

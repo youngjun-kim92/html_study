@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그들</title>
+</head>
+<body>
+    <form action="member.jsp" method="post">
+        <p>
+            <label>URL</label>
+            <input type="url">
+        </p>
+        <p>
+            <label>이메일</label>
+            <input type="email">
+        </p>
+        <p>
+            <label>휴대폰</label>
+            <input type="tel" pattern="\d{3}-\d{3,4}\-d{4}">
+        </p>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

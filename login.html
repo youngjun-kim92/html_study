@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+</head>
+<style>
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.login {
+    box-sizing: border-box;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: -1px -1px 5px rgba(0,0,0,0.2);
+    width: 400px;
+}
+.login > h2 {
+    color: #feff9a;
+    font-size: 1.2em;
+    padding: 0 0 10px 10px;
+}
+.login form {
+    position: relative;
+    border-radius: 3px 3px 0 0 ;
+    padding: 10px 10px 0 10px;
+}
+.login label {
+    display: inline-block;
+    width: 50px;
+}
+.login input {
+    width: 150px;
+    height: 30px;
+    padding: 1px 1px 1px 4px;
+    border: 1px solid #ccc;
+}
+
+.login button {
+    position: absolute;
+    top: 33px;
+    right: 50px;
+    width: 70px;
+    height: 82px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: 1px solid #222;
+    border-radius: 0px;
+    background-color: #222;
+    cursor: pointer;
+}
+.login fieldset {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    border: none;
+}
+.memberLink {
+    padding: 0 35px;
+    overflow: hidden;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.find {
+    padding: 0 10px;
+    float: right;
+    margin: 15px 6px;
+    border-right: 1px solid white;
+}
+.find:first-child {
+    border-right: none;
+}
+.hidden {
+    display: none;
+}
+
+</style>
+<body>
+    <section class="login">
+        <form action="login.jsp" method="post" id="loginForm" name="loginForm">
+            <fieldset>
+                <legend class="hidden">회원 로그인 폼</legend>
+                <p>
+                    <label for="userId"></label>
+                    <input type="text" id="userId" name="userId" placeholder="아이디" required>
+                </p>
+                <p>
+                    <label for="userPw"></label>
+                    <input type="password" id="userPw" name="userPw" placeholder="비밀번호" required>
+                </p>
+                <button type="submit">로그인</button>
+            </fieldset>                        
+        </form>
+        <div class="memberLink">
+            <a href="#" class="find">아이디 찾기</a>
+            <a href="#" class="find">비밀번호 찾기</a>
+            <a href="join.html" class="find">회원가입</a>
+        </div>
+    </section>
+</body>
+</html>

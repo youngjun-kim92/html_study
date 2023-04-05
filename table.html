@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 요소</title>
+</head>
+<body>
+    <figure>
+        <figcaption>
+            <p>비상연락망</p>
+        </figcaption>
+        <table border="1">
+            <!--tr : 행, td : 열, th : 제목-->
+            <tr>    
+                <th>이름</th><th>전화번호</th><th>주소</th>       
+            </tr>
+            <tr>
+                <td>김철수</td><td>010-1111-2222</td><td rowspan="2">서울시 종로구</td>
+            </tr>
+            <tr>
+                <td>이영희</td><td>010-2222-3333</td>
+            </tr>
+            <tr>
+                <td>홍길동</td><td>010-7777-8888</td><td>성남시 중원구</td>
+            </tr>
+            <tr>
+                <td colspan="3">매월 2째주 토요일 모임</td>
+            </tr>
+        </table>
+    </figure>
+    <table border="1">
+        <caption>주간식단표</caption>
+        <!--제목-->
+        <thead>
+            <tr>
+                <th>시간</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>비고</th>
+            </tr>
+        </thead>
+        <!--내용-->
+        <tbody>
+            <tr>
+                <td>아침</td><td>김치찌개</td><td>된장찌개</td><td rowspan="3">한식뷔페</td><td>순두부찌개</td><td>백반정식</td><td rowspan="3">시간엄수</td>
+            </tr>
+            <tr>
+                <td>점심</td><td>칼국수</td><td>비빔밥</td><td colspan="2">라면</td>
+            </tr>
+            <tr>
+                <td>저녁</td><td>순대국</td><td>콩나물국</td><td>부대찌개</td><td>카레덮밥</td>
+            </tr>
+        </tbody>
+        <!--요약-->
+        <tfoot>
+            <td colspan="7">* 배식 시간은 수요일을 제외하고 1시간입니다.</td>
+        </tfoot>
+        
+        
+        <!--<tr>
+            <th>시간</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>비고</th>
+        </tr>
+        <tr>
+            <td>아침</td><td>김치찌개</td><td>된장찌개</td><td rowspan="3">한식뷔페</td><td>순두부찌개</td><td>백반정식</td><td rowspan="3">시간엄수</td>
+        </tr>
+        <tr>
+            <td>점심</td><td>칼국수</td><td>비빔밥</td><td colspan="2">라면</td>
+        </tr>
+        <tr>
+            <td>저녁</td><td>순대국</td><td>콩나물국</td><td>부대찌개</td><td>카레덮밥</td>
+        </tr>
+        <tr>
+            <td colspan="7">* 배식 시간은 수요일을 제외하고 1시간입니다.</td>
+        </tr>-->
+    </table>
+</body>
+</html>
